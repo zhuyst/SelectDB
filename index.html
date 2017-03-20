@@ -2,7 +2,7 @@
 <head>
     <title>珠海浮生记数据库查询</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <script src="select_table.js"></script>
+    <script src="selectTable.js"></script>
 </head>
 <body>
 
@@ -10,18 +10,15 @@
     <div class="text" style=" text-align:center;">
         <h1>珠海浮生记数据库查询</h1>
         <b>Select a table:</b>
-        <select name="tables" onchange="showTable(this.value)">
-            <option value="" selected="selected">未选择</option>
-            <option value="apartment">apartment</option>
-            <option value="event_health">event_health</option>
-            <option value="event_item">event_item</option>
-            <option value="event_money">event_money</option>
-            <option value="global">global</option>
-            <option value="item">item</option>
-            <option value="pill">pill</option>
-            <option value="player">player</option>
-            <option value="ranking_list">ranking_list</option>
-        </select>
+        <div id="tables">
+            <script>
+                document.getElementById("tables").get
+                document.getElementById("tables").innerText = showTable();
+            </script>
+            <select name="tables" onchange="showTableMsg(this.value)">
+                <option value="" selected="selected">未选择</option>
+            </select>
+        </div>
         <p>
         <div id="txtHint"><b>Table info will be listed here.</b></div>
         </p>
